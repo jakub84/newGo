@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/jakub84/jakub84.github.io/go-gatsby.git',
+    repo: 'https://github.com/jakub84/newGo.git',
   },
   () => {
     console.log('Deploy Complete!');
