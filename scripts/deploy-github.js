@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/jakub84/newGo.git',
+    repo: 'https://github.com/jakub84/newGo/docs/newGo.git',
   },
   () => {
     console.log('Deploy Complete!');
