@@ -6,7 +6,7 @@ class Button extends Component {
   render() {
     return (
       <div className={`button ${this.props.type}`}>
-        <Link to={this.props.linkTo}>{this.props.linkContent}</Link>
+        <Link to="/">{this.props.linkContent}</Link>
       </div>
     );
   }

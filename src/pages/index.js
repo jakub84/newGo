@@ -12,7 +12,6 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lastScroll: 0,
       logoDark: true,
     };
   }
@@ -59,14 +58,14 @@ class Index extends Component {
             title="Capicola brisket venison"
             content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter."
           >
-            <Button type="white" linkContent="call to action" linkTo="#" />
+            <Button type="white" linkContent="call to action" linkTo="/" />
           </ContentSection>
           <ContentSection
             id="o-nas"
             title="o nas"
             content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter.."
           >
-            <Button type="hide" />
+            <Button type="hide" to="/" />
           </ContentSection>
           <Contact
             // id= "kontakt"

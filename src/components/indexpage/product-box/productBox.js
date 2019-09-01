@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './productBox.scss';
-import { Link } from 'gatsby';
-import icon from '../../../static/assets/product-icons/kokardy-narodowe-icon.svg';
 
 function ProductBox(props) {
   return (

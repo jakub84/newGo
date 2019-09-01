@@ -25,24 +25,24 @@ class navigation extends Component {
       <div className="navigation-container">
         <ul className={`navigation ${this.state.isOpen && 'open'}`}>
           <li>
-            <Link to="#header" onClick={this.closeMenu}>
+            <Link to="/" onClick={this.closeMenu}>
               home
             </Link>
           </li>
           <li>
-            <Link to="#nasze-produkty" onClick={this.closeMenu}>
+            <Link to="/" onClick={this.closeMenu}>
               nasze produkty
             </Link>
           </li>
           {/* <li><Link to="#oferta-specjalna" onClick = {this.toogleMenu}>oferta specjalna</Link></li> */}
           <li>
-            <Link to="#o-nas" onClick={this.closeMenu}>
+            <Link to="/" onClick={this.closeMenu}>
               o nas
             </Link>
           </li>
 
           <li>
-            <Link to="#kontakt" onClick={this.closeMenu}>
+            <Link to="/" onClick={this.closeMenu}>
               kontakt
             </Link>
           </li>

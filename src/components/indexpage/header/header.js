@@ -11,7 +11,7 @@ function header(props) {
         <nav>
           <div className="nav-container ">
             <div className="logo-container white-logo">
-              <Link to="#">
+              <Link to="/">
                 <img src={props.logo} alt="galeria obrazu" />
               </Link>
             </div>
@@ -29,11 +29,11 @@ function header(props) {
                             <Button
 
                                 linkContent="Oferta"
-                                linkTo="#" />
+                                linkTo="/" />
                             <Button
 
                                 linkContent="Allegro"
-                                linkTo="#" />
+                                linkTo="/" />
                         </div>
                     </div>
                     <div className="image-content">

@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './products.scss';
-import { Link } from 'gatsby';
 import Button from '../button/button';
 import ProductBox from '../product-box/productBox';
 import icon1 from '../../../static/assets/product-icons/kokardy-narodowe-icon.svg';
@@ -29,7 +28,7 @@ function Products(props) {
       <div className="call-to-action">
         <div className="container">
           <h3>Bacon ipsum dolor amet frankfurter cow meatloaf pork bell:</h3>
-          <Button linkContent="call to action" linkTo="#" />
+          <Button linkContent="call to action" linkTo="/" />
         </div>
       </div>
       <div className="container">
@@ -39,56 +38,56 @@ function Products(props) {
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon2}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon3}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon4}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon5}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon6}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon7}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
           <ProductBox
             icon={icon8}
             title="This is headline"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           >
-            <Button type="white smaller" linkContent="wejdź" linkTo="#" />
+            <Button type="white smaller" linkContent="wejdź" linkTo="/" />
           </ProductBox>
         </div>
       </div>
