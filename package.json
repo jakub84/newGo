@@ -43,10 +43,10 @@
   ],
   "license": "UNLICENSED",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "deploy:github": "npm run build && node ./scripts/deploy-github",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby-plugin-s3 deploy --yes",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/newGo',
   siteMetadata: {
     title: 'Gatsby Default Starter',
     description:
