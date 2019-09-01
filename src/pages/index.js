@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Layout from '../layout';
-import SEO from '../components/SEO/SEO';
 import Header from '../components/indexpage/header/header';
 import OurProducts from '../components/indexpage/products/products';
 import ContentSection from '../components/indexpage/content-section/ContentSection';
@@ -52,7 +51,6 @@ class Index extends Component {
     return (
       <Layout>
         <div className="index-container">
-          <SEO />
           {/* <PostListing postEdges={postEdges} /> */}
           <Header logo={this.state.logoDark === true ? mainLogo : mainLogoWhite} />
           <OurProducts />

@@ -6,6 +6,7 @@ import ProductBox from '../product-box/productBox';
 import icon1 from '../../../static/assets/product-icons/kokardy-narodowe-icon.svg';
 import icon2 from '../../../static/assets/product-icons/choragiewki-icon.svg';
 import icon3 from '../../../static/assets/product-icons/daszki-icon.svg';
+import icon4 from '../../../static/assets/product-icons/daszki-icon.svg';
 import icon5 from '../../../static/assets/product-icons/wiatraczki-icon.svg';
 import icon6 from '../../../static/assets/product-icons/balony-icon.svg';
 import icon7 from '../../../static/assets/product-icons/flagi-wsz-icon.svg';
