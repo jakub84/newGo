@@ -46,12 +46,11 @@ class Index extends Component {
   }
 
   render() {
-    // const postEdges = this.props.data.allMarkdownRemark.edges;
+    const { logoDark } = this.state;
     return (
       <Layout>
         <div className="index-container">
-          {/* <PostListing postEdges={postEdges} /> */}
-          <Header logo={this.state.logoDark === true ? mainLogo : mainLogoWhite} />
+          <Header logo={logoDark === true ? mainLogo : mainLogoWhite} />
           <OurProducts />
           <ContentSection
             type="dark"
@@ -68,7 +67,6 @@ class Index extends Component {
             <Button type="hide" to="/" />
           </ContentSection>
           <Contact
-            // id= "kontakt"
             title="kontakt"
             content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter.."
           />

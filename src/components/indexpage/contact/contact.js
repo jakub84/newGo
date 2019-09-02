@@ -11,7 +11,6 @@ class Contact extends Component {
       note: '',
       termsConfirmation: false,
       errors: {},
-      succesMsg: '',
     };
   }
 
@@ -37,7 +36,7 @@ class Contact extends Component {
 
   onFormSubmit = (e) => {
     const {
-      name, email, note, phone, termsConfirmation,
+      name, email, phone, termsConfirmation,
     } = this.state;
     const errors = {};
     // alert([this.state.name, this.state.email,this.state.phone, this.state.note])
@@ -62,34 +61,27 @@ class Contact extends Component {
     }
 
     this.setState({ errors });
-
-    if (Object.keys(errors).length === 0 && errors.constructor === Object) {
-      const data = {
-        name: this.state.name,
-        email: this.state.email,
-        phoneNumber: this.state.phone,
-        note: this.state.note,
-        termsConfirmation: this.state.termsConfirmation,
-      };
-    }
   }
 
   render() {
-    const { errors } = this.state;
+    const { type, title, content } = this.props;
+    const {
+      errors, name, email, phone, note,
+    } = this.state;
 
     return (
-      <div className={`contact ${this.props.type}`} id="kontakt">
+      <div className={`contact ${type}`} id="kontakt">
         <div className="container">
-          <h2>{this.props.title}</h2>
+          <h2>{title}</h2>
           <div className="separator" />
-          <p>{this.props.content}</p>
+          <p>{content}</p>
         </div>
         <div className="contact-container">
           <div className="form-container">
             <form autoComplete="off" className="form" id="form" onSubmit={this.onFormSubmit}>
               <input
                 type="text"
-                value={this.state.name}
+                value={name}
                 onChange={this.handleInputChange}
                 placeholder="Imię i nazwisko"
                 name="name"
@@ -99,7 +91,7 @@ class Contact extends Component {
               {errors && <div className="error-message">{errors.name}</div>}
               <input
                 type="email"
-                value={this.state.email}
+                value={email}
                 onChange={this.handleInputChange}
                 placeholder="Email:"
                 name="email"
@@ -108,7 +100,7 @@ class Contact extends Component {
               />
               {errors && <div className="error-message">{errors.email}</div>}
               <input
-                value={this.state.phone}
+                value={phone}
                 onChange={this.handleInputChange}
                 placeholder="Telefon"
                 name="phone"
@@ -119,7 +111,7 @@ class Contact extends Component {
 
               <textarea
                 placeholder="Wiadomość"
-                value={this.state.note}
+                value={note}
                 onChange={this.handleInputChange}
                 name="note"
                 id="note"

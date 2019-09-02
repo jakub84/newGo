@@ -15,7 +15,6 @@ const SimpleSlider = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 9000,
-    //   fade:true,
     pauseOnDotsHover: true,
   };
   return (
@@ -105,12 +104,6 @@ const SimpleSlider = () => {
           <div className="image-content">
             <div className="image">image</div>
           </div>
-          {/* <div className="slider-navigation">
-                        <div className="nav-cirkle active"></div>
-                        <div className="nav-cirkle"></div>
-                        <div className="nav-cirkle"></div>
-                        <div className="nav-cirkle"></div>
-                    </div> */}
         </div>
       </div>
       <div>

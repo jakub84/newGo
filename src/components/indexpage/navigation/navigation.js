@@ -21,9 +21,10 @@ class navigation extends Component {
   }
 
   render() {
+    const { isOpen } = this.props;
     return (
       <div className="navigation-container">
-        <ul className={`navigation ${this.state.isOpen && 'open'}`}>
+        <ul className={`navigation ${isOpen && 'open'}`}>
           <li>
             <Link to="/" onClick={this.closeMenu}>
               home
@@ -34,7 +35,6 @@ class navigation extends Component {
               nasze produkty
             </Link>
           </li>
-          {/* <li><Link to="#oferta-specjalna" onClick = {this.toogleMenu}>oferta specjalna</Link></li> */}
           <li>
             <Link to="/" onClick={this.closeMenu}>
               o nas

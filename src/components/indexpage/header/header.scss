@@ -50,8 +50,6 @@
 
         .logo-container {
             width: 250px;
-            // height: 126px;
-            // overflow: hidden;
             & > a > img {
                 width: 250px;
 
@@ -59,7 +57,7 @@
                     transform: scale(0.95);
                 }
 
-                @media screen and (max-width: 440px) {
+                @media (max-width: 540px) {
                     width: 150px;
                 }
             }
