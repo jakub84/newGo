@@ -73,6 +73,11 @@
             border-bottom: 1px solid #a9468f;
             padding: 5px 30px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+            .logo-container {
+                & > a > img {
+                    width: 120px;
+                }
+            }
         }
     }
 

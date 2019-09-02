@@ -9,9 +9,10 @@ class navigation extends Component {
   }
 
   toogleMenu = () => {
-    this.setState(prevstate => ({
-      isOpen: !prevstate.isOpen,
-    }));
+    const { isOpen } = this.state;
+    this.setState({
+      isOpen: !isOpen,
+    });
   }
 
   closeMenu = () => {
@@ -21,7 +22,7 @@ class navigation extends Component {
   }
 
   render() {
-    const { isOpen } = this.props;
+    const { isOpen } = this.state;
     return (
       <div className="navigation-container">
         <ul className={`navigation ${isOpen && 'open'}`}>

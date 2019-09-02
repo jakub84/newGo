@@ -25,19 +25,19 @@ class Index extends Component {
   }
 
   handleScroll = () => {
+
+
     const navigation = document.querySelector('nav');
     const logo = document.querySelector('.logo-container > a > img');
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    // if (this.state.lastScroll > scroll) {
     if (scroll > 100) {
       navigation.classList.add('scrolled-menu');
-      logo.style.width = '120px';
+      // logo.style.width = '120px';
       this.setState({
         logoDark: false,
       });
     } else {
       navigation.classList.remove('scrolled-menu');
-      logo.style.width = '250px';
       this.setState({
         logoDark: true,
       });
